@@ -15,8 +15,8 @@ local awesome_menu = {
 
 local xprop_menu = {
   { "gamemoded", config.terminal .. " -e fish -c \"gamemoded -r (sleep 0.25; xprop | grep PID | cut -d= -f2)\"" },
-  { "kill", "fish -c \"kill (xprop | grep PID | cut -d= -f2)\"" },
-  { "kill -9", "fish -c \"kill -9 (xprop | grep PID | cut -d= -f2)\"" },
+  { "kill", "bash -c \"kill $(xprop | grep PID | cut -d= -f2)\"" },
+  { "kill -9", "bash -c \"kill -9 $(xprop | grep PID | cut -d= -f2)\"" },
 }
 
 last_translate_cmd = ""
@@ -40,12 +40,13 @@ local ocr_menu = {
 
 local main_menu = awful.menu({
   items = {
-    { "awesome", awesome_menu, beautiful.awesome_icon },
-    { "gucharmap", "gucharmap" },
-    { "xprop", xprop_menu },
+    { "   awesome", awesome_menu, beautiful.awesome_icon },
+    { "   thunar", "thunar" },
+    { "󰈍   gucharmap", "gucharmap" },
+    { "   xprop", xprop_menu },
     --{ "ocr", ocr_menu },
-    { "scrcpy", "scrcpy" },
-    { "open terminal", config.terminal }
+    { "󰄘   scrcpy", "scrcpy" },
+    { "   open terminal", config.terminal }
   }
 })
 

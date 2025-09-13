@@ -84,7 +84,7 @@ local globalkeys = gears.table.join(
         found = true
       end
       if not found then
-        awful.spawn("keepassxc")
+        awful.spawn("flatpak run org.keepassxc.KeePassXC")
       end
     end,
     { description="open KeePassXC", group="awesome" }
@@ -119,7 +119,7 @@ local globalkeys = gears.table.join(
   awful.key(
     { config.modkey,           }, "c",
     function ()
-      p = io.popen("toggleConky")
+      p = io.popen("bash -c 'toggleConky'")
       naughty.notify({ text = p:read("*all"), timeout = 3 })
       p:close()
     end,

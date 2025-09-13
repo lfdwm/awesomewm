@@ -103,12 +103,12 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
---theme.wallpaper = "/home/linus/Pictures/Zdzislaw Beksinski.jpg"
---theme.wallpaper = "/home/linus/Pictures/bgbgbg.jpeg"
---theme.wallpaper = "/home/linus/Documents/Wallpaper.png"
-theme.wallpaper = "/home/linus/Documents/Wallpaper2.png"
---theme.wallpaper = "/home/linus/Documents/Wallpaper3.png"
---theme.wallpaper = "/home/linus/Documents/Wallpaper4.png"
+--theme.wallpaper = "/home/lfdwm/Pictures/Zdzislaw Beksinski.jpg"
+--theme.wallpaper = "/home/lfdwm/Pictures/bgbgbg.jpeg"
+--theme.wallpaper = "/home/lfdwm/Documents/Wallpaper.png"
+theme.wallpaper = "/home/lfdwm/Documents/Wallpaper2.png"
+--theme.wallpaper = "/home/lfdwm/Documents/Wallpaper3.png"
+--theme.wallpaper = "/home/lfdwm/Documents/Wallpaper4.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

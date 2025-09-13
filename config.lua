@@ -4,7 +4,7 @@ local conf =  {}
 
 conf.modkey = "Mod4"  -- Usually, Mod4 is the key with a logo between Control and Alt.
 
-conf.beautiful_theme_path = "/home/linus/.config/awesome/theme.lua"
+conf.beautiful_theme_path = "/home/lfdwm/.config/awesome/theme.lua"
 
 conf.terminal = "alacritty"  -- Default terminal
 conf.editor = "nvim"     -- Default editor
